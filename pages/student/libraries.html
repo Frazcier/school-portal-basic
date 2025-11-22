@@ -3,299 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../../assets/css/libraries.css"/>
+    <link rel="stylesheet" href="../../assets/css/libraries.css"/>
     <link rel="icon" type="image/x-icon" href="../../assets/img/logo/logo.ico">
-    <title>LIBRARIES UI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Libraries</title>
 </head>
 <body>
     <div id="header-placeholder"></div>
 
     <div class="container">
-        
         <div id="sidebar-placeholder"></div>
 
         <div class="content">
+            
             <div class="section-header">
-                <h1>Libraries</h1>
-                <h3>Access all your educational resources in one place</h3>
-            </div>
-
-            <input type="radio" id="course-materials" name="tab" checked hidden>
-            <input type="radio" id="e-books" name="tab" hidden>
-            <input type="radio" id="research-papers" name="tab" hidden>
-
-            <div class="nav-bar">
-                <label class="nav-item" for="course-materials">Course Materials</label>
-                <label class="nav-item" for="e-books">E-Books</label>
-                <label class="nav-item" for="research-papers">Research Papers</label>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="search-section">
-                <img src="../../assets/img/icons/search-icon.svg" alt="Icon">
-                <input type="text" placeholder="Search">
-            </div>
-
-            <div class="content-container">
-                <div id="course-materials-content" class="fadeIn">
-                    <div class="content-section">
-                        <div class="item-box">
-                            <div class="item-header">
-                                <img class="icon" src="../../assets/img/icons/course-materials-1-icon.svg" alt="Icon">
-                            </div>
-                            <div class="item-content">
-                                <p>Advanced Concepts in Object-Oriented Programming</p>
-                                <p>This material covers advanced OOP principles, including encapsulation, inheritance, polymorphism, and abstraction. It also introduces exception handling, file management, and data structures such as linked lists and stacks, with hands-on coding exercises.</p>
-                            </div>
-                            <div class="item-footer">
-                                <div class="item-type pdf"><span>PDF File</span></div>
-                                <p>Computer Programming 2 (IT 114)</p>
-                                <div class="download">
-                                    <img class="icon" src="../../assets/img/icons/download-icon.svg" alt="Icon">
-                                    <p>Download</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-box">
-                            <div class="item-header">
-                                <img class="icon" src="../../assets/img/icons/course-materials-2-icon.svg" alt="Icon">
-                                <p>Fundamentals of Human-Computer Interaction and Usability</p>
-                            </div>
-                            <div class="item-content">
-                                <p>An introduction to HCI concepts, focusing on usability principles, heuristic evaluation, cognitive psychology, and user-centered design. This material includes case studies and real-world examples to analyze user experiences in digital interfaces.</p>
-                            </div>
-                            <div class="item-footer">
-                                <div class="item-type slides"><span>Slide Presentation</span></div>
-                                <p>Introduction to Human and Computer Interaction (IT 115)</p>
-                                <div class="download">
-                                    <img class="icon" src="../../assets/img/icons/download-icon.svg" alt="Icon">
-                                    <p>Download</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-box">
-                            <div class="item-header">
-                                <img class="icon" src="../../assets/img/icons/course-materials-3-icon.svg" alt="Icon">
-                                <p>Building Modern Web Applications with HTML, CSS, and JavaScript</p>
-                            </div>
-                            <div class="item-content">
-                                <p>This guide provides an overview of front-end development, covering HTML structure, CSS styling, JavaScript fundamentals, and client-server communication. Includes a hands-on project to build a simple interactive webpage.</p>
-                            </div>
-                            <div class="item-footer">
-                                <div class="item-type link"><span>Website Link</span></div>
-                                <p>Web Systems and Technologies 1 (IT 116)</p>
-                                <div class="visit">
-                                    <img class="icon" src="../../assets/img/icons/visit-link-icon.svg" alt="Icon">
-                                    <p>Visit Link</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-box">
-                            <div class="item-header">
-                                <img class="icon" src="../../assets/img/icons/course-materials-4-icon.svg" alt="Icon">
-                                <p>Data Analysis with Python and R</p>
-                            </div>
-                            <div class="item-content">
-                                <p>An introduction to statistical computing, covering data preprocessing, exploratory data analysis, and visualization using Python and R. This material includes practical exercises on handling datasets and generating descriptive statistics.</p>
-                            </div>
-                            <div class="item-footer">
-                                <div class="item-type pdf"><span>PDF File</span></div>
-                                <p>Statistical Computing (STATS 22)</p>
-                                <div class="download">
-                                    <img class="icon" src="../../assets/img/icons/download-icon.svg" alt="Icon">
-                                    <p>Download</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-box">
-                            <div class="item-header">
-                                <img class="icon" src="../../assets/img/icons/course-materials-5-icon.svg" alt="Icon">
-                                <p>Exploring Modern Web Technologies and Frameworks</p>
-                            </div>
-                            <div class="item-content">
-                                <p>This material explores modern web development frameworks like React, Vue, and Angular. It provides an overview of backend technologies, database integration, and API development, with a beginner-friendly hands-on project.</p>
-                            </div>
-                            <div class="item-footer">
-                                <div class="item-type link"><span>Website Link</span></div>
-                                <p>Web System and Technologies 1 (IT 116)</p>
-                                <div class="visit">
-                                    <img class="icon" src="../../assets/img/icons/visit-link-icon.svg" alt="Icon">
-                                    <p>Visit Link</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="header-details">
+                    <h1>Content Library</h1>
+                    <h3>Access course materials, e-books, and research papers.</h3>
                 </div>
-                <div id="e-books-content" class="fadeIn">
-                    <div class="content-section">
-                        <div class="item-box">
-                            <div class="item-header">
-                                <img class="icon" src="../../assets/img/icons/e-books-1-icon.svg" alt="Icon">
-                                <p>Cybersecurity Essentials: Protecting Your Digital World</p>
-                            </div>
-                            <div class="item-content">
-                                <p>This e-book covers fundamental cybersecurity principles, including threat detection, encryption, firewalls, and best practices for securing personal and enterprise systems.</p>
-                            </div>
-                            <div class="item-footer">
-                                <div class="item-type e-book-1"><span>E-Book</span></div>
-                                <div class="download">
-                                    <img class="icon" src="../../assets/img/icons/download-icon.svg" alt="Icon">
-                                    <p>Download</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-box">
-                            <div class="item-header">
-                                <img class="icon" src="../../assets/img/icons/e-books-2-icon.svg" alt="Icon">
-                                <p>AI and Machine Learning: A Beginner’s Guide to Smart Computing</p>
-                            </div>
-                            <div class="item-content">
-                                <p>This book introduces artificial intelligence and machine learning concepts, algorithms, and real-world applications, making complex topics accessible to beginners.</p>
-                            </div>
-                            <div class="item-footer">
-                                <div class="item-type e-book-2"><span>E-Book</span></div>
-                                <div class="download">
-                                    <img class="icon" src="../../assets/img/icons/download-icon.svg" alt="Icon">
-                                    <p>Download</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-box">
-                            <div class="item-header">
-                                <img class="icon" src="../../assets/img/icons/e-books-3-icon.svg" alt="Icon">
-                                <p>Cloud Computing Demystified: A Practical Approach for Businesses</p>
-                            </div>
-                            <div class="item-content">
-                                <p>A comprehensive guide explaining cloud service models (IaaS, PaaS, SaaS), deployment strategies, security considerations, and benefits for businesses transitioning to the cloud.</p>
-                            </div>
-                            <div class="item-footer">
-                                <div class="item-type e-book-3"><span>E-Book</span></div>
-                                <div class="download">
-                                    <img class="icon" src="../../assets/img/icons/download-icon.svg" alt="Icon">
-                                    <p>Download</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-box">
-                            <div class="item-header">
-                                <img class="icon" src="../../assets/img/icons/e-books-4-icon.svg" alt="Icon">
-                                <p>The Future of IT: Emerging Technologies Shaping the Digital Age</p>
-                            </div>
-                            <div class="item-content">
-                                <p>This e-book explores futuristic technologies like quantum computing, blockchain, IoT, and their potential impact on industries and everyday life.</p>
-                            </div>
-                            <div class="item-footer">
-                                <div class="item-type e-book-4"><span>E-Book</span></div>
-                                <div class="download">
-                                    <img class="icon" src="../../assets/img/icons/download-icon.svg" alt="Icon">
-                                    <p>Download</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-box">
-                            <div class="item-header">
-                                <img class="icon" src="../../assets/img/icons/e-books-5-icon.svg" alt="Icon">
-                                <p>Full-Stack Web Development: From Frontend to Backend Mastery</p>
-                            </div>
-                            <div class="item-content">
-                                <p>A step-by-step guide covering frontend frameworks, backend technologies, databases, APIs, and deployment strategies for aspiring full-stack developers.</p>
-                            </div>
-                            <div class="item-footer">
-                                <div class="item-type e-book-5"><span>E-Book</span></div>
-                                <div class="download">
-                                    <img class="icon" src="../../assets/img/icons/download-icon.svg" alt="Icon">
-                                    <p>Download</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="header-actions">
+                    <button class="btn-secondary">
+                        <i class="fas fa-bookmark"></i> Saved Items
+                    </button>
                 </div>
-                <div id="research-papers-content" class="fadeIn">
-                    <div class="content-section">
-                        <div class="item-box">
-                            <div class="item-header">
-                                <img class="icon" src="../../assets/img/icons/research-papers-icon.svg" alt="Icon">
-                                <p>The Role of Artificial Intelligence in Cybersecurity: Enhancing Threat Detection and Response</p>
-                            </div>
-                            <div class="item-content">
-                                <p>This paper explores how AI-driven cybersecurity solutions help in identifying and mitigating cyber threats. It discusses machine learning algorithms, anomaly detection, and real-time response mechanisms.</p>
-                            </div>
-                            <div class="item-footer">
-                                <div class="item-type pdf"><span>Research</span></div>
-                                <div class="download">
-                                    <img class="icon" src="../../assets/img/icons/download-icon.svg" alt="Icon">
-                                    <p>Download</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-box">
-                            <div class="item-header">
-                                <img class="icon" src="../../assets/img/icons/research-papers-icon.svg" alt="Icon">
-                                <p>Blockchain Technology in Secure Data Management: A Paradigm Shift in IT Infrastructure</p>
-                            </div>
-                            <div class="item-content">
-                                <p>This research examines the use of blockchain for secure data storage and transmission. It highlights its impact on data integrity, decentralization, and the potential applications in industries like finance and healthcare.</p>
-                            </div>
-                            <div class="item-footer">
-                                <div class="item-type pdf"><span>Research</span></div>
-                                <div class="download">
-                                    <img class="icon" src="../../assets/img/icons/download-icon.svg" alt="Icon">
-                                    <p>Download</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-box">
-                            <div class="item-header">
-                                <img class="icon" src="../../assets/img/icons/research-papers-icon.svg" alt="Icon">
-                                <p>The Evolution of Cloud Computing: Challenges and Opportunities in Enterprise Adoption</p>
-                            </div>
-                            <div class="item-content">
-                                <p>This paper analyzes the growth of cloud computing, addressing security concerns, scalability, and cost-effectiveness. It also evaluates the latest trends, including hybrid and multi-cloud architectures.</p>
-                            </div>
-                            <div class="item-footer">
-                                <div class="item-type pdf"><span>Research</span></div>
-                                <div class="download">
-                                    <img class="icon" src="../../assets/img/icons/download-icon.svg" alt="Icon">
-                                    <p>Download</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-box">
-                            <div class="item-header">
-                                <img class="icon" src="../../assets/img/icons/research-papers-icon.svg" alt="Icon">
-                                <p>Ethical Implications of Big Data Analytics: Balancing Innovation and Privacy</p>
-                            </div>
-                            <div class="item-content">
-                                <p>This study delves into the ethical concerns surrounding big data, discussing issues like data privacy, consent, and algorithmic bias. It also explores the regulatory frameworks governing big data usage.</p>
-                            </div>
-                            <div class="item-footer">
-                                <div class="item-type pdf"><span>Research</span></div>
-                                <div class="download">
-                                    <img class="icon" src="../../assets/img/icons/download-icon.svg" alt="Icon">
-                                    <p>Download</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-box">
-                            <div class="item-header">
-                                <img class="icon" src="../../assets/img/icons/research-papers-icon.svg" alt="Icon">
-                                <p>The Impact of Quantum Computing on Cryptography: A Threat to Traditional Encryption?</p>
-                            </div>
-                            <div class="item-content">
-                                <p>This research investigates how quantum computing challenges existing cryptographic methods. It explores potential solutions such as post-quantum cryptography and quantum-resistant algorithms.</p>
-                            </div>
-                            <div class="item-footer">
-                                <div class="item-type pdf"><span>Research</span></div>
-                                <div class="download">
-                                    <img class="icon" src="../../assets/img/icons/download-icon.svg" alt="Icon">
-                                    <p>Download</p>
-                                </div>
-                            </div>
-                        </div>
+            </div>
+
+            <div class="toolbar">
+                <div class="search-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Search for title, author, or topic...">
+                </div>
+                
+                <div class="filter-group">
+                    <div class="select-wrapper">
+                        <select>
+                            <option selected>All Subjects</option>
+                            <option>IT 114 (Prog 2)</option>
+                            <option>IT 115 (HCI)</option>
+                            <option>IT 116 (Web)</option>
+                        </select>
+                        <i class="fas fa-chevron-down chevron"></i>
+                    </div>
+                    <div class="select-wrapper">
+                        <select>
+                            <option selected>Recent</option>
+                            <option>Oldest</option>
+                            <option>A-Z</option>
+                        </select>
+                        <i class="fas fa-chevron-down chevron"></i>
                     </div>
                 </div>
             </div>
+
+            <div class="library-container">
+                <input type="radio" id="tab-materials" name="lib-tabs" checked hidden>
+                <input type="radio" id="tab-ebooks" name="lib-tabs" hidden>
+                <input type="radio" id="tab-research" name="lib-tabs" hidden>
+
+                <div class="tabs-nav">
+                    <label for="tab-materials" class="tab-link">Course Materials</label>
+                    <label for="tab-ebooks" class="tab-link">E-Books</label>
+                    <label for="tab-research" class="tab-link">Research Papers</label>
+                </div>
+
+                <div class="tab-content">
+                    
+                    <div id="view-materials" class="resources-grid fadeIn">
+                        
+                        <div class="resource-card">
+                            <div class="card-icon pdf">
+                                <img src="../../assets/img/icons/file-icon.svg" alt="PDF">
+                            </div>
+                            <div class="card-body">
+                                <span class="tag">IT 114</span>
+                                <h4>Advanced OOP Concepts</h4>
+                                <p>Encapsulation, inheritance, polymorphism, and abstraction.</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="file-info">PDF &bullet; 2.4 MB</span>
+                                <button class="icon-btn"><i class="fas fa-download"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="resource-card">
+                            <div class="card-icon slides">
+                                <img src="../../assets/img/icons/course-materials-2-icon.svg" alt="Slides">
+                            </div>
+                            <div class="card-body">
+                                <span class="tag">IT 115</span>
+                                <h4>HCI Fundamentals</h4>
+                                <p>Usability principles, heuristic evaluation, and cognitive psychology.</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="file-info">PPTX &bullet; 5.1 MB</span>
+                                <button class="icon-btn"><i class="fas fa-download"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="resource-card">
+                            <div class="card-icon link">
+                                <img src="../../assets/img/icons/visit-link-icon.svg" alt="Link">
+                            </div>
+                            <div class="card-body">
+                                <span class="tag">IT 116</span>
+                                <h4>Modern Web Apps</h4>
+                                <p>Guide to front-end development with HTML, CSS, and JS.</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="file-info">External Link</span>
+                                <button class="icon-btn"><i class="fas fa-external-link-alt"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="resource-card">
+                            <div class="card-icon pdf">
+                                <img src="../../assets/img/icons/file-icon.svg" alt="PDF">
+                            </div>
+                            <div class="card-body">
+                                <span class="tag">STATS 22</span>
+                                <h4>Data Analysis w/ Python</h4>
+                                <p>Introduction to statistical computing and data preprocessing.</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="file-info">PDF &bullet; 1.8 MB</span>
+                                <button class="icon-btn"><i class="fas fa-download"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="view-ebooks" class="resources-grid fadeIn">
+                        <div class="resource-card">
+                            <div class="card-icon ebook">
+                                <img src="../../assets/img/icons/e-books-1-icon.svg" alt="Book">
+                            </div>
+                            <div class="card-body">
+                                <span class="tag">Security</span>
+                                <h4>Cybersecurity Essentials</h4>
+                                <p>Protecting your digital world: Threat detection and encryption.</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="file-info">EPUB &bullet; 12 MB</span>
+                                <button class="icon-btn"><i class="fas fa-download"></i></button>
+                            </div>
+                        </div>
+                        <div class="resource-card">
+                            <div class="card-icon ebook">
+                                <img src="../../assets/img/icons/e-books-3-icon.svg" alt="Book">
+                            </div>
+                            <div class="card-body">
+                                <span class="tag">Cloud</span>
+                                <h4>Cloud Computing</h4>
+                                <p>A practical approach for businesses and developers.</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="file-info">PDF &bullet; 8 MB</span>
+                                <button class="icon-btn"><i class="fas fa-download"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="view-research" class="resources-grid fadeIn">
+                        <div class="resource-card">
+                            <div class="card-icon research">
+                                <img src="../../assets/img/icons/research-papers-icon.svg" alt="Paper">
+                            </div>
+                            <div class="card-body">
+                                <span class="tag">AI</span>
+                                <h4>AI in Cybersecurity</h4>
+                                <p>Enhancing threat detection and response using ML algorithms.</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="file-info">PDF &bullet; 2024</span>
+                                <button class="icon-btn"><i class="fas fa-download"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </div>
 

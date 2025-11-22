@@ -57,7 +57,7 @@ img {
     object-fit: contain;
 }
 
-:is(button, input) {
+:is(button, input, select, textarea) {
     font: inherit;
     border: unset;
     background: unset;
@@ -408,7 +408,7 @@ button {
 .section-header {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
 
     & h3 {

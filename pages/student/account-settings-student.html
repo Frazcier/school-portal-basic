@@ -3,105 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/css/account-settings.css"/>
+    <link rel="stylesheet" href="../../assets/css/staff-common.css"/>
+    <link rel="stylesheet" href="../../assets/css/student-dashboard.css"/>
     <link rel="icon" type="image/x-icon" href="../../assets/img/logo/logo.ico">
-    <title>Student Account Settings</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="../../assets/js/calendar.js" defer></script>
+    <script src="../../assets/js/component-student.js" defer></script>
+    <title>Student Dashboard</title>
 </head>
 <body>
     <div id="header-placeholder"></div>
 
     <div class="container">
-        
-        <div id="sidebar-placeholder"></div>
+        <div id="sidebar-placeholder"></div>  
 
         <div class="content">
+            
             <div class="section-header">
-                <h1>Account Settings</h1>
-                <h3>Manage your personal information and security preferences.</h3>
-            </div>
-
-            <div class="settings-card">
-                <div class="profile-row">
-                    <div class="profile-left">
-                        <img src="../../assets/img/profile-pictures/profile.svg" alt="Profile Picture">
-                        <div class="profile-text">
-                            <p>Profile Picture</p>
-                            <p>PNG, JPEG under 15MB</p>
-                        </div>
-                    </div>
-                    <button class="btn btn-outline">Upload New Picture</button>
+                <div class="header-details">
+                    <h1>Dashboard</h1>
+                    <h3>Overview of your academic progress and schedule.</h3>
+                </div>
+                <div class="header-actions">
+                    <p class="current-date-display"><i class="far fa-calendar-alt"></i> April 28, 2025</p>
                 </div>
             </div>
 
-            <div class="settings-card">
-                <h4 class="card-title">Personal Information</h4>
-                <p class="card-desc">Update your personal details here.</p>
-                
-                <div class="form-grid">
-                    <div class="input-group">
-                        <label>First Name</label>
-                        <input class="input-field no-icon" type="text" value="Timothy">
-                    </div>
-                    <div class="input-group">
-                        <label>Middle Name</label>
-                        <input class="input-field no-icon" type="text" placeholder="Optional">
-                    </div>
-                    <div class="input-group">
-                        <label>Last Name</label>
-                        <input class="input-field no-icon" type="text" value="Dionela">
+            <div class="welcome-banner">
+                <div class="banner-content">
+                    <h1>Welcome back, Timothy! 👋</h1>
+                    <p>You have <strong>3 pending assignments</strong> and <strong>1 upcoming exam</strong> this week.</p>
+                    
+                    <div class="progress-wrapper">
+                        <div class="progress-info">
+                            <span>Semester Progress</span>
+                            <span>2nd Sem, 2023-2024</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 65%;"></div>
+                        </div>
                     </div>
                 </div>
+                <img src="../../assets/img/icons/background-elements.svg" class="banner-bg" alt="Decoration">
             </div>
 
-            <div class="settings-card">
-                <h4 class="card-title">Contact Email</h4>
-                <p class="card-desc">Manage the email address used for invoices and notifications.</p>
+            <div class="dashboard-layout">
                 
-                <div class="email-row">
-                    <div class="input-group">
-                        <label>Email Address</label>
-                        <div class="input-wrapper">
-                            <img src="../../assets/img/icons/email-icon.svg" class="icon" alt="Email">
-                            <input class="input-field" type="email" value="dionela.ikinamada@gmail.com">
+                <div class="main-column">
+                    
+                    <div class="stats-row">
+                        <div class="mini-stat-card">
+                            <div class="icon-box purple"><i class="fas fa-book"></i></div>
+                            <div>
+                                <h4>21</h4>
+                                <p>Units Enrolled</p>
+                            </div>
+                        </div>
+                        <div class="mini-stat-card">
+                            <div class="icon-box blue"><i class="fas fa-graduation-cap"></i></div>
+                            <div>
+                                <h4>1.75</h4>
+                                <p>General Weighted Avg</p>
+                            </div>
+                        </div>
+                        <div class="mini-stat-card">
+                            <div class="icon-box orange"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <h4>95%</h4>
+                                <p>Attendance Rate</p>
+                            </div>
                         </div>
                     </div>
-                    <button class="btn btn-outline" style="margin-bottom: 1rem;">
-                        <img src="../../assets/img/icons/add-icon.svg" alt="Add"> Add Email
-                    </button>
-                </div>
-            </div>
 
-            <div class="settings-card">
-                <h4 class="card-title">Security</h4>
-                <p class="card-desc">Update your password and secure your account.</p>
-                
-                <div class="form-grid" style="grid-template-columns: 1fr 1fr;">
-                    <div class="input-group">
-                        <label>Current Password</label>
-                        <div class="input-wrapper">
-                            <img src="../../assets/img/icons/password-icon.svg" class="icon" alt="Lock">
-                            <input class="input-field" type="password" placeholder="••••••••">
+                    <div class="section-block">
+                        <div class="block-header">
+                            <h3>My Courses</h3>
+                            <a href="enrolled-subjects.html" class="link-btn">View All</a>
+                        </div>
+                        <div class="courses-grid">
+                            <div class="course-tile">
+                                <div class="course-color-bar purple"></div>
+                                <div class="course-info">
+                                    <h4>IT 114</h4>
+                                    <p>Computer Programming 2</p>
+                                    <div class="course-meta">
+                                        <span><i class="far fa-clock"></i> 9:00 AM</span>
+                                        <span><i class="fas fa-map-marker-alt"></i> CIS 305</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-tile">
+                                <div class="course-color-bar blue"></div>
+                                <div class="course-info">
+                                    <h4>IT 116</h4>
+                                    <p>Web Systems & Tech</p>
+                                    <div class="course-meta">
+                                        <span><i class="far fa-clock"></i> 3:00 PM</span>
+                                        <span><i class="fas fa-map-marker-alt"></i> CIS 302</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-tile">
+                                <div class="course-color-bar orange"></div>
+                                <div class="course-info">
+                                    <h4>IT 115</h4>
+                                    <p>Introduction to HCI</p>
+                                    <div class="course-meta">
+                                        <span><i class="far fa-clock"></i> 8:00 AM</span>
+                                        <span><i class="fas fa-map-marker-alt"></i> CIS 302</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="input-group">
-                        <label>New Password</label>
-                        <div class="input-wrapper">
-                            <img src="../../assets/img/icons/password-icon.svg" class="icon" alt="Lock">
-                            <input class="input-field" type="password" placeholder="Enter new password">
+
+                    <div class="section-block">
+                        <div class="block-header">
+                            <h3>Announcements</h3>
+                        </div>
+                        <div class="announcement-card">
+                            <div class="ann-badge">NEW</div>
+                            <div class="ann-text">
+                                <h4>New Officers Elected for BYTE Org</h4>
+                                <p>The computer student organization has elected a new set of officers for A.Y. 2025...</p>
+                            </div>
+                            <button class="icon-btn"><i class="fas fa-chevron-right"></i></button>
                         </div>
                     </div>
+
                 </div>
-                
-                <div class="security-actions">
-                    <button class="btn btn-primary">Save Changes</button>
-                    <a href="../auth/login.html" class="btn btn-outline">Logout</a>
-                    <button class="btn btn-danger">Request Account Deletion</button>
+
+                <div class="side-column">
+                    
+                    <div class="widget-card calendar-widget">
+                        <div class="wrapper">
+                            <header>
+                                <p class="current-date"></p>
+                                <div class="icons">
+                                    <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                                    <span id="next" class="material-symbols-rounded">chevron_right</span>
+                                </div>
+                            </header>
+                            <div class="calendar">
+                                <ul class="weeks">
+                                    <li>S</li><li>M</li><li>T</li><li>W</li><li>T</li><li>F</li><li>S</li>
+                                </ul>
+                                <ul class="days"></ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget-card tasks-widget">
+                        <h3>Up Next</h3>
+                        <div class="task-list">
+                            <div class="task-item exam">
+                                <div class="task-icon"><i class="fas fa-file-signature"></i></div>
+                                <div class="task-info">
+                                    <h4>Web Systems Exam</h4>
+                                    <p>Tomorrow, 10:00 AM</p>
+                                </div>
+                            </div>
+                            <div class="task-item homework">
+                                <div class="task-icon"><i class="fas fa-code"></i></div>
+                                <div class="task-info">
+                                    <h4>Minesweeper Project</h4>
+                                    <p>Due: Apr 30, 2025</p>
+                                </div>
+                            </div>
+                            <div class="task-item homework">
+                                <div class="task-icon"><i class="fas fa-pencil-ruler"></i></div>
+                                <div class="task-info">
+                                    <h4>HCI Prototype</h4>
+                                    <p>Due: May 02, 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
         </div>
     </div>
-
-    <script src="../../assets/js/component-student.js"></script>
 </body>
 </html>
