@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/subject-management.css"/>
+    <link rel="icon" type="image/x-icon" href="../../assets/img/logo/logo.ico">
+    <title>SUBJECT MANAGEMENT UI</title>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <div class="container">
+
+        <div id="sidebar-placeholder"></div>
+
+        <div class="content">
+            <div class="section-header">
+                <div class="header-details">
+                    <h1>Subject Management</h1>
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                </div>
+            </div>
+            <div class="section-1">
+                <div class="dropdowns">
+                    <p>Filter by Status:</p>
+                    <div class="dropdown">
+                        <select>
+                            <option selected>All Status</option>
+                            <option>All Status</option>
+                            <option>Active</option>
+                            <option>Pending</option>
+                            <option>Inactive</option>
+                        </select>
+                        <svg class="icon" width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.2801 9.53021C19.4205 9.38959 19.4994 9.19897 19.4994 9.00021C19.4994 8.80146 19.4205 8.61084 19.2801 8.47021H6.22007C6.07962 8.61084 6.00073 8.80146 6.00073 9.00021C6.00073 9.19897 6.07962 9.38959 6.22007 9.53021L12.2201 15.5302C12.3607 15.6707 12.5513 15.7496 12.7501 15.7496C12.9488 15.7496 13.1394 15.6707 13.2801 15.5302L19.2801 9.53021Z"/>
+                        </svg>                        
+                    </div>
+                    <p>Filter by Department:</p>
+                    <div class="dropdown">
+                        <select>
+                            <option selected>All Departments</option>
+                            <option>Information Technology</option>
+                            <option>Multimedia Arts</option>
+                            <option>Computer Science</option>
+                            <option>Arts and Sciences</option>
+                            <option>Psychology</option>
+                        </select>
+                        <svg class="icon" width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.2801 9.53021C19.4205 9.38959 19.4994 9.19897 19.4994 9.00021C19.4994 8.80146 19.4205 8.61084 19.2801 8.47021H6.22007C6.07962 8.61084 6.00073 8.80146 6.00073 9.00021C6.00073 9.19897 6.07962 9.38959 6.22007 9.53021L12.2201 15.5302C12.3607 15.6707 12.5513 15.7496 12.7501 15.7496C12.9488 15.7496 13.1394 15.6707 13.2801 15.5302L19.2801 9.53021Z"/>
+                        </svg>  
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="add-course">+ Add Course</button>
+                    <button class="bulk-actions">Bulk Actions</button>
+                </div>
+            </div>
+            <div class="section-2">
+                <table>
+                    <thead>
+                        <th>Subject Name</th>
+                        <th>Department</th>
+                        <th>Instructor</th>
+                        <th>Students</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="subject-name">
+                                <p>Introduction to HCI</p>
+                                <span class="subject-code">Subject Code: IT 115</span>
+                            </td>
+                            <td>Information Technology</td>
+                            <td>Delia Leon</td>
+                            <td>124</td>
+                            <td><span class="status active">Active</span></td>
+                            <td><span class="edit">Edit</span> | <span class="delete">Delete</span></td>
+                        </tr>
+                        <tr>
+                            <td class="subject-name">
+                                <p>Computer Programming 2</p>
+                                <span class="subject-code">Subject Code: IT 114</span>
+                            </td>
+                            <td>Information Technology</td>
+                            <td>Henson Sagorsor</td>
+                            <td>84</td>
+                            <td><span class="status active">Active</span></td>
+                            <td><span class="edit">Edit</span> | <span class="delete">Delete</span></td>
+                        </tr>
+                        <tr>
+                            <td class="subject-name">
+                                <p>Web Systems and Technologies</p>
+                                <span class="subject-code">Subject Code: IT 116</span>
+                            </td>
+                            <td>Information Technology</td>
+                            <td>Chris Paza</td>
+                            <td>105</td>
+                            <td><span class="status active">Active</span></td>
+                            <td><span class="edit">Edit</span> | <span class="delete">Delete</span></td>
+                        </tr>
+                        <tr>
+                            <td class="subject-name">
+                                <p>Web Design Fundamentals</p>
+                                <span class="subject-code">Subject Code: IT 999</span>
+                            </td>
+                            <td>Multimedia Arts</td>
+                            <td>Maria Gonzales</td>
+                            <td>65</td>
+                            <td><span class="status pending">Pending</span></td>
+                            <td><span class="edit">Edit</span> | <span class="delete">Delete</span></td>
+                        </tr>
+                        <tr>
+                            <td class="subject-name">
+                                <p>Advanced Data Structures</p>
+                                <span class="subject-code">Subject Code: IT 001</span>
+                            </td>
+                            <td>Computer Science</td>
+                            <td>James Bond</td>
+                            <td>136</td>
+                            <td><span class="status inactive">Inactive</span></td>
+                            <td><span class="edit">Edit</span> | <span class="delete">Delete</span></td>
+                        </tr>
+                        <tr>
+                            <td class="subject-name">
+                                <p>Introduction to Psychology</p>
+                                <span class="subject-code">Subject Code: PSY 101</span>
+                            </td>
+                            <td>Psychology</td>
+                            <td>Sarah Johnson</td>
+                            <td>42</td>
+                            <td><span class="status inactive">Inactive</span></td>
+                            <td><span class="edit">Edit</span> | <span class="delete">Delete</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/component-staff.js"></script>
+</body>
+</html>

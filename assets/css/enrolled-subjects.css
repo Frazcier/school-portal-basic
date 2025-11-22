@@ -1,0 +1,71 @@
+@import url(global.css);
+
+.subjects {
+    display: grid;
+    row-gap: 2rem;
+    column-gap: 2.6rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.subjects {
+    position: relative;
+}
+
+.subjects-border {
+    position: absolute;
+}
+
+.subject-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 0.8rem;
+    z-index: 1;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    
+    & .subject-header {
+        padding: 0.4rem;
+        border-top-right-radius: 0.8rem;
+        border-top-left-radius: 0.8rem; 
+        background-color: rgba(60, 36, 98, 0.8);
+        cursor: default;
+
+        & p {
+            color: var(--color-light-text);
+        }
+    }
+
+    & .profile {
+        position: absolute;
+        top: 45%;
+        transform: translateY(-75%);
+        right: 0.2rem;
+
+        & .avatar {
+            transform: rotate(0);
+        }
+    }
+
+    & .subject-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0.8rem 0.6rem;
+        cursor: default;
+        
+        & .icon {
+           align-self: end;
+           margin-right: 0.8rem;
+        }
+        
+        & p {
+            font-size: 0.9rem;
+
+        }
+    }
+}
+
+.subject-box:hover {
+    transform: translateY(0.4rem);
+    box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}

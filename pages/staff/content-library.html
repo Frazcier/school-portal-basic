@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/content-library.css">  
+    <link rel="icon" type="image/x-icon" href="../../assets/img/logo/logo.ico">
+    <title>CONTENT LIBRARY UI</title>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <div class="container">
+
+        <div id="sidebar-placeholder"></div>
+
+        <div class="content">
+            <div class="section-header">
+                <div class="header-details">
+                    <h1>Content Library</h1>
+                    <h3>Manage educational resources and materials.</h3>
+                </div>
+                <div class="buttons">
+                    <button class="upload-button">Upload File</button>
+                    <button class="export-button">Export</button>
+                </div>
+            </div>
+            <div class="section-1">
+                <input type="text" placeholder="Search document..." class="search-bar">
+                <div class="dropdown">
+                    <select>
+                        <option selected disabled>Document Type</option>
+                        <option>Document</option>
+                        <option>Slides</option>
+                        <option>Image</option>
+                        <option>Video</option>
+                    </select>
+                    <svg class="icon" width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.2801 9.53021C19.4205 9.38959 19.4994 9.19897 19.4994 9.00021C19.4994 8.80146 19.4205 8.61084 19.2801 8.47021H6.22007C6.07962 8.61084 6.00073 8.80146 6.00073 9.00021C6.00073 9.19897 6.07962 9.38959 6.22007 9.53021L12.2201 15.5302C12.3607 15.6707 12.5513 15.7496 12.7501 15.7496C12.9488 15.7496 13.1394 15.6707 13.2801 15.5302L19.2801 9.53021Z"/>
+                    </svg>                        
+                </div>
+                <div class="dropdown">
+                    <select>
+                        <option selected disabled>Status</option>
+                        <option>Published</option>
+                        <option>Draft</option>
+                        <option>Archived</option>
+                    </select>
+                    <svg class="icon" width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.2801 9.53021C19.4205 9.38959 19.4994 9.19897 19.4994 9.00021C19.4994 8.80146 19.4205 8.61084 19.2801 8.47021H6.22007C6.07962 8.61084 6.00073 8.80146 6.00073 9.00021C6.00073 9.19897 6.07962 9.38959 6.22007 9.53021L12.2201 15.5302C12.3607 15.6707 12.5513 15.7496 12.7501 15.7496C12.9488 15.7496 13.1394 15.6707 13.2801 15.5302L19.2801 9.53021Z"/>
+                    </svg>  
+                </div>
+                <div class="dropdown">
+                    <select>
+                        <option selected disabled>Sort By</option>
+                        <option>Sana All Tapos</option>
+                        <option>Tung Tung Sahur</option>
+                        <option>Trippi Tropa Lang</option>
+                    </select>
+                    <svg class="icon" width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.2801 9.53021C19.4205 9.38959 19.4994 9.19897 19.4994 9.00021C19.4994 8.80146 19.4205 8.61084 19.2801 8.47021H6.22007C6.07962 8.61084 6.00073 8.80146 6.00073 9.00021C6.00073 9.19897 6.07962 9.38959 6.22007 9.53021L12.2201 15.5302C12.3607 15.6707 12.5513 15.7496 12.7501 15.7496C12.9488 15.7496 13.1394 15.6707 13.2801 15.5302L19.2801 9.53021Z"/>
+                    </svg>  
+                </div>
+                <button class="filter-button">Filter</button>
+            </div>
+            <div class="section-2">
+                <table>
+                    <thead>
+                        <th>File Name</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                        <th>Subject</th>
+                        <th>Actions</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Module 1 - Introduction</td>
+                            <td>Document</td>
+                            <td><span class="status published">Published</span></td>
+                            <td>Introduction to HCI</td>
+                            <td><span class="download">Download</span> | <span class="edit">Edit</span> | <span>Delete</span></td>
+                        </tr>
+                        <tr>
+                            <td>Fundamentals of Programming</td>
+                            <td>Document</td>
+                            <td><span class="status published">Published</span></td>
+                            <td>Computer Programming 2</td>
+                            <td><span class="download">Download</span> | <span class="edit">Edit</span> | <span>Delete</span></td>
+                        </tr>
+                        <tr>
+                            <td>Introduction to HCI</td>
+                            <td>Video</td>
+                            <td><span class="status published">Published</span></td>
+                            <td>Introduction to HCI</td>
+                            <td><span class="download">Download</span> | <span class="edit">Edit</span> | <span class="delete">Delete</span></td>
+                        </tr>
+                        <tr>
+                            <td>Web Systems Lecture</td>
+                            <td>Document</td>
+                            <td><span class="status draft">Draft</span></td>
+                            <td>Web Systems</td>
+                            <td><span class="download">Download</span> | <span class="edit">Edit</span> | <span class="delete">Delete</span></td>
+                        </tr>
+                        <tr>
+                            <td>Midterm Exam Reviewer</td>
+                            <td>Document</td>
+                            <td><span class="status archived">Archived</span></td>
+                            <td>Statistical Computing</td>
+                            <td><span class="download">Download</span> | <span class="edit">Edit</span> | <span class="delete">Delete</span></td>
+                        </tr>
+                        <tr>
+                            <td>Statistical Computing Module</td>
+                            <td>Document</td>
+                            <td><span class="status published">Published</span></td>
+                            <td>Statistical Computing</td>
+                            <td><span class="download">Download</span> | <span class="edit">Edit</span> | <span class="delete">Delete</span></td>
+                        </tr>
+                        <tr>
+                            <td>Database Management Tutorial</td>
+                            <td>Video</td>
+                            <td><span class="status published">Published</span></td>
+                            <td>Web Systems</td>
+                            <td><span class="download">Download</span> | <span class="edit">Edit</span> | <span class="delete">Delete</span></td>
+                        </tr>
+                        <tr>
+                            <td>Computer Network Diagrams/td>
+                            <td>Image</td>
+                            <td><span class="status draft">Draft</span></td>
+                            <td>Computer Programming 2</td>
+                            <td><span class="download">Download</span> | <span class="edit">Edit</span> | <span class="delete">Delete</span></td>
+                        </tr>
+                        <tr>
+                            <td>AI Trends Presentation</td>
+                            <td>Slides</td>
+                            <td><span class="status archived">Archived</span></td>
+                            <td>Introduction to HCI</td>
+                            <td><span class="download">Download</span> | <span class="edit">Edit</span> | <span class="delete">Delete</span></td>
+                        </tr>
+                        <tr>
+                            <td>Web Development Cheat Sheet</td>
+                            <td>Document</td>
+                            <td><span class="status published">Published</span></td>
+                            <td>Web Systems</td>
+                            <td><span class="download">Download</span> | <span class="edit">Edit</span> | <span class="delete">Delete</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/component-staff.js"></script>
+</body>
+</html>

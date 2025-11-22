@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/user-management.css"/>
+    <link rel="icon" type="image/x-icon" href="../../assets/img/logo/logo.ico">
+    <title>USER MANAGEMENT UI</title>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <div class="container">
+
+        <div id="sidebar-placeholder"></div>
+
+        <div class="content">            
+            <div class="section-header">
+                <div class="header-details">
+                    <h1>User Management</h1>
+                    <h3>Manage students, instructors, and administrative stuff</h3>
+                </div>
+                <div class="buttons">
+                    <button class="upload-button">Upload File</button>
+                    <button class="export-button">Export</button>
+                </div>
+            </div>
+            <div class="section-1">
+                <input type="text" placeholder="Search document..." class="search-bar">
+                <div class="dropdown">
+                    <select>
+                        <option selected disabled>Status</option>
+                        <option>Active</option>
+                        <option>On Leave</option>
+                        <option>In Active</option>
+                    </select>
+                    <svg class="icon" width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.2801 9.53021C19.4205 9.38959 19.4994 9.19897 19.4994 9.00021C19.4994 8.80146 19.4205 8.61084 19.2801 8.47021H6.22007C6.07962 8.61084 6.00073 8.80146 6.00073 9.00021C6.00073 9.19897 6.07962 9.38959 6.22007 9.53021L12.2201 15.5302C12.3607 15.6707 12.5513 15.7496 12.7501 15.7496C12.9488 15.7496 13.1394 15.6707 13.2801 15.5302L19.2801 9.53021Z"/>
+                    </svg>  
+                </div>
+                <div class="dropdown">
+                    <select>
+                        <option selected disabled>Sort By</option>
+                        <option>Brr Brr Patapim</option>
+                        <option>Hotdog</option>
+                        <option>Brainrot Overload</option>
+                    </select>
+                    <svg class="icon" width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.2801 9.53021C19.4205 9.38959 19.4994 9.19897 19.4994 9.00021C19.4994 8.80146 19.4205 8.61084 19.2801 8.47021H6.22007C6.07962 8.61084 6.00073 8.80146 6.00073 9.00021C6.00073 9.19897 6.07962 9.38959 6.22007 9.53021L12.2201 15.5302C12.3607 15.6707 12.5513 15.7496 12.7501 15.7496C12.9488 15.7496 13.1394 15.6707 13.2801 15.5302L19.2801 9.53021Z"/>
+                    </svg>  
+                </div>
+                <button class="filter-button">Filter</button>
+            </div>
+
+            
+            <div class="section-2">
+                <input type="radio" id="students" name="selection" checked hidden>
+                <input type="radio" id="instructors" name="selection" hidden>
+                <input type="radio" id="admins" name="selection" hidden>
+                <input type="radio" id="pending" name="selection" hidden>
+
+                <div class="heading">
+                    <label for="students">Students</label>
+                    <label for="instructors">Instructors</label>
+                    <label for="admins">Admins</label>
+                    <label for="pending">Pending</label>
+                </div>
+                <div class="content-container">
+                    <div id="students-content" class="fadeIn">
+                        <table>
+                            <thead>
+                                <th>Name</th>
+                                <th>ID</th>
+                                <th>Email</th>
+                                <th>Subjects</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="profile-details">
+                                        <img src="../../assets/img/profile-pictures/profile-picture-1.jpg" alt="Profile Picture" class="profile-picture">
+                                        <div class="details">
+                                            <p>Timothy Dionela</p>
+                                            <p>Semester 2</p>
+                                        </div>
+                                    </td>
+                                    <td>STU-8761</td>
+                                    <td>dionela.ikinamada@gmail.com</td>
+                                    <td>4 Enrolled</td>
+                                    <td><span class="status active">Active</span></td>
+                                    <td><span class="action">Edit</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="profile-details">
+                                        <img src="../../assets/img/profile-pictures/profile-picture-2.jpg" alt="Profile Picture" class="profile-picture">
+                                        <div class="details">
+                                            <p>Christa Grace</p>
+                                            <p>Semester 1</p>
+                                        </div>
+                                    </td>
+                                    <td>STU-1842</td>
+                                    <td>christa.grace@gmail.com</td>
+                                    <td>5 Enrolled</td>
+                                    <td><span class="status active">Active</span></td>
+                                    <td><span class="action">Edit</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="profile-details">
+                                        <img src="../../assets/img/profile-pictures/profile-picture-3.jpg" alt="Profile Picture" class="profile-picture">
+                                        <div class="details">
+                                            <p>Raymond Allen</p>
+                                            <p>Semester 2</p>
+                                        </div>
+                                    </td>
+                                    <td>STU-9251</td>
+                                    <td>rayray.alien@gmail.com</td>
+                                    <td>6 Enrolled</td>
+                                    <td><span class="status active">Active</span></td>
+                                    <td><span class="action">Edit</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="profile-details">
+                                        <img src="../../assets/img/profile-pictures/profile-picture-4.jpg" alt="Profile Picture" class="profile-picture">
+                                        <div class="details">
+                                            <p>Allison Marie</p>
+                                            <p>Semester 3</p>
+                                        </div>
+                                    </td>
+                                    <td>STU-5742</td>
+                                    <td>allison.marie@gmail.com</td>
+                                    <td>3 Enrolled</td>
+                                    <td><span class="status on-leave">On Leave</span></td>
+                                    <td><span class="action">Edit</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="profile-details">
+                                        <img src="../../assets/img/profile-pictures/profile-picture-5.jpg" alt="Profile Picture" class="profile-picture">
+                                        <div class="details">
+                                            <p>Jander Vien</p>
+                                            <p>Semester 2</p>
+                                        </div>
+                                    </td>
+                                    <td>STU-6803</td>
+                                    <td>jander.vien@gmail.com</td>
+                                    <td>4 Enrolled</td>
+                                    <td><span class="status inactive">Inactive</span></td>
+                                    <td><span class="action">Edit</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="instructors-content" class="fadeIn">
+                        <table>
+                            <thead>
+                                <th>Name</th>
+                                <th>ID</th>
+                                <th>Email</th>
+                                <th>Subjects</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="profile-details">
+                                        <img src="../../assets/img/profile-pictures/profile-picture-6.jpg" alt="Profile Picture" class="profile-picture">
+                                        <div class="details">
+                                            <p>Tralalelo Tropalang</p>
+                                            <p>Instructor</p>
+                                        </div>
+                                    </td>
+                                    <td>INS-8761</td>
+                                    <td>tropalang@gmail.com</td>
+                                    <td>4 Enrolled</td>
+                                    <td><span class="status active">Active</span></td>
+                                    <td><span class="action">Edit</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="profile-details">
+                                        <img src="../../assets/img/profile-pictures/profile-picture-7.jpg" alt="Profile Picture" class="profile-picture">
+                                        <div class="details">
+                                            <p>Tung Sahur</p>
+                                            <p>Instructor</p>
+                                        </div>
+                                    </td>
+                                    <td>INS-1842</td>
+                                    <td>tung.sahur@gmail.com</td>
+                                    <td>5 Enrolled</td>
+                                    <td><span class="status active">Active</span></td>
+                                    <td><span class="action">Edit</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="profile-details">
+                                        <img src="../../assets/img/profile-pictures/profile-picture-8.jpg" alt="Profile Picture" class="profile-picture">
+                                        <div class="details">
+                                            <p>Shimpanzini Bananini</p>
+                                            <p>Instructor</p>
+                                        </div>
+                                    </td>
+                                    <td>INS-9251</td>
+                                    <td>bananananana@gmail.com</td>
+                                    <td>6 Enrolled</td>
+                                    <td><span class="status active">Active</span></td>
+                                    <td><span class="action">Edit</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="profile-details">
+                                        <img src="../../assets/img/profile-pictures/profile-picture-9.jpg" alt="Profile Picture" class="profile-picture">
+                                        <div class="details">
+                                            <p>Mary Jane</p>
+                                            <p>Instructor</p>
+                                        </div>
+                                    </td>
+                                    <td>INS-5742</td>
+                                    <td>marijane@gmail.com</td>
+                                    <td>3 Enrolled</td>
+                                    <td><span class="status on-leave">On Leave</span></td>
+                                    <td><span class="action">Edit</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="profile-details">
+                                        <img src="../../assets/img/profile-pictures/profile-picture-10.jpg" alt="Profile Picture" class="profile-picture">
+                                        <div class="details">
+                                            <p>Shrek The Great</p>
+                                            <p>Instructor</p>
+                                        </div>
+                                    </td>
+                                    <td>INS-6803</td>
+                                    <td>shrekthebest@gmail.com</td>
+                                    <td>4 Enrolled</td>
+                                    <td><span class="status inactive">Inactive</span></td>
+                                    <td><span class="action">Edit</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="admins-content" class="fadeIn">
+                        <table>
+                            <thead>
+                                <th>Name</th>
+                                <th>ID</th>
+                                <th>Email</th>
+                                <th>Subjects</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="profile-details">
+                                        <img src="../../assets/img/profile-pictures/profile-picture-11.jpg" alt="Profile Picture" class="profile-picture">
+                                        <div class="details">
+                                            <p>Arian Dave</p>
+                                            <p>Owner</p>
+                                        </div>
+                                    </td>
+                                    <td>OWN-LOL</td>
+                                    <td>frazfraz@gmail.com</td>
+                                    <td>♾️ Enrolled</td>
+                                    <td><span class="status active">Active</span></td>
+                                    <td><span class="action">Edit</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="profile-details">
+                                        <img src="../../assets/img/profile-pictures/profile-picture-12.jpg" alt="Profile Picture" class="profile-picture">
+                                        <div class="details">
+                                            <p>Giga Chad</p>
+                                            <p>Administrator</p>
+                                        </div>
+                                    </td>
+                                    <td>ADM-1842</td>
+                                    <td>giga.chad@gmail.com</td>
+                                    <td>5 Enrolled</td>
+                                    <td><span class="status active">Active</span></td>
+                                    <td><span class="action">Edit</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="profile-details">
+                                        <img src="../../assets/img/profile-pictures/profile-picture-13.jpg" alt="Profile Picture" class="profile-picture">
+                                        <div class="details">
+                                            <p>Handsome Squid</p>
+                                            <p>Administrator</p>
+                                        </div>
+                                    </td>
+                                    <td>ADM-9251</td>
+                                    <td>handsome.squid@gmail.com</td>
+                                    <td>6 Enrolled</td>
+                                    <td><span class="status active">Active</span></td>
+                                    <td><span class="action">Edit</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="profile-details">
+                                        <img src="../../assets/img/profile-pictures/profile-picture-14.jpg" alt="Profile Picture" class="profile-picture">
+                                        <div class="details">
+                                            <p>Giga Steve</p>
+                                            <p>Administrator</p>
+                                        </div>
+                                    </td>
+                                    <td>ADM-5742</td>
+                                    <td>giga.steve@gmail.com</td>
+                                    <td>3 Enrolled</td>
+                                    <td><span class="status on-leave">On Leave</span></td>
+                                    <td><span class="action">Edit</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="profile-details">
+                                        <img src="../../assets/img/profile-pictures/profile-picture-15.jpg" alt="Profile Picture" class="profile-picture">
+                                        <div class="details">
+                                            <p>Zero Two</p>
+                                            <p>Administrator</p>
+                                        </div>
+                                    </td>
+                                    <td>ADM-6803</td>
+                                    <td>zero.two@gmail.com</td>
+                                    <td>4 Enrolled</td>
+                                    <td><span class="status deceased">Deceased</span></td>
+                                    <td><span class="action">Edit</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="pending-content" class="fadeIn">
+                        <table>
+                            <thead>
+                                <th>Name</th>
+                                <th>ID</th>
+                                <th>Email</th>
+                                <th>Subjects</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="profile-details">
+                                        <img src="../../assets/img/profile-pictures/profile-picture-16.jpg" alt="Profile Picture" class="profile-picture">
+                                        <div class="details">
+                                            <p>Bald Gojo</p>
+                                            <p>Applicant</p>
+                                        </div>
+                                    </td>
+                                    <td>APPLICANT</td>
+                                    <td>gujuguju@gmail.com</td>
+                                    <td>1 Enrolled</td>
+                                    <td><span class="status pending">Pending</span></td>
+                                    <td><span class="action">Edit</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="profile-details">
+                                        <img src="../../assets/img/profile-pictures/profile-picture-17.jpg" alt="Profile Picture" class="profile-picture">
+                                        <div class="details">
+                                            <p>Bald Levi</p>
+                                            <p>Applicant</p>
+                                        </div>
+                                    </td>
+                                    <td>APPLICANT</td>
+                                    <td>libilivi@gmail.com</td>
+                                    <td>5 Enrolled</td>
+                                    <td><span class="status pending">Pending</span></td>
+                                    <td><span class="action">Edit</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="profile-details">
+                                        <img src="../../assets/img/profile-pictures/profile-picture-18.jpg" alt="Profile Picture" class="profile-picture">
+                                        <div class="details">
+                                            <p>Sung Jinwoo</p>
+                                            <p>Applicant</p>
+                                        </div>
+                                    </td>
+                                    <td>APPLICANT</td>
+                                    <td>solomewing@gmail.com</td>
+                                    <td>6 Enrolled</td>
+                                    <td><span class="status pending">Pending</span></td>
+                                    <td><span class="action">Edit</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="profile-details">
+                                        <img src="../../assets/img/profile-pictures/profile-picture-19.jpg" alt="Profile Picture" class="profile-picture">
+                                        <div class="details">
+                                            <p>Thukuna</p>
+                                            <p>Applicant</p>
+                                        </div>
+                                    </td>
+                                    <td>APPLICANT</td>
+                                    <td>thukuna@gmail.com</td>
+                                    <td>3 Enrolled</td>
+                                    <td><span class="status pending">Pending</span></td>
+                                    <td><span class="action">Edit</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="profile-details">
+                                        <img src="../../assets/img/profile-pictures/profile-picture-20.jpg" alt="Profile Picture" class="profile-picture">
+                                        <div class="details">
+                                            <p>Bald Eren</p>
+                                            <p>Applicant</p>
+                                        </div>
+                                    </td>
+                                    <td>APPLICANT</td>
+                                    <td>awesomehead@gmail.com</td>
+                                    <td>4 Enrolled</td>
+                                    <td><span class="status pending">Pending</span></td>
+                                    <td><span class="action">Edit</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="profile-details">
+                                        <img src="../../assets/img/profile-pictures/profile-picture-21.jpg" alt="Profile Picture" class="profile-picture">
+                                        <div class="details">
+                                            <p>Me Frfr</p>
+                                            <p>Applicant</p>
+                                        </div>
+                                    </td>
+                                    <td>SUKONA</td>
+                                    <td>mememmee@gmail.com</td>
+                                    <td>4 Enrolled</td>
+                                    <td><span class="status pending">Pending</span></td>
+                                    <td><span class="action">Edit</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/component-staff.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+@import url(global.css);
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.divider {
+    margin: 1rem 0;
+}
+
+:is(.section-1, .section-2) {
+    margin-bottom: 2.6rem;
+}
+
+:is(.section-2, .section-3) {
+    display: flex;
+}
+
+.section-1 {
+    display: grid;
+    column-gap: 2.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    & .item {
+        padding: 1.6rem;
+        cursor: default;
+        border-radius: 0.8rem;
+        border: 0.1rem solid rgba(51, 51, 51, 0.05);
+        box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: translateY(0.1rem);
+            box-shadow: 0.1rem 0.1rem 0 rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+:is(.section-2, .section-3) {
+    padding: 1.6rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid rgba(51, 51, 51, 0.05);
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.section-2 {
+    flex-direction: column;
+    gap: 1rem;
+
+    & .heading {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+
+        & h3 {
+            color: var(--color-dark-text);
+        }
+
+        & p {
+            font-size: 0.9rem;
+            color: rgba(51, 51, 51, 0.7);
+        }
+    }
+
+    & table {
+        width: 100%;
+        border-collapse: collapse;
+        
+        & thead {
+            & th {
+                text-align: left;
+                font-size: 0.9rem;
+                font-weight: 600;
+                padding: 0.8rem;
+                color: rgba(51, 51, 51, 0.7);
+                border-bottom: 0.1rem solid rgba(51, 51, 51, 0.3);
+            }
+        }
+
+        & tbody {
+            & td {
+                font-size: 0.9rem;
+                padding: 1rem 0.8rem;
+            }
+
+            & tr {
+                &:not(:last-of-type) {
+                    border-bottom: 0.1rem solid rgba(51, 51, 51, 0.1);
+                }
+            }
+
+            & :is(span.status, span.action) {
+                font-size: 0.8rem;
+                font-weight: 500;
+            }
+
+            & span.status {
+                cursor: default;
+                padding: 0.4rem 1rem;
+                border-radius: 6rem;
+                background-color: var(--background-grey);
+            }
+
+            & span.action {
+                cursor: pointer;
+                padding: 0.4rem 1rem;
+                border-radius: 0.6rem;
+                color: var(--color-light-text);
+                background-color: var(--primary-color);
+            }
+
+            & .receipt {
+                border: 0.1rem solid var(--primary-color);
+                color: var(--primary-color) !important;
+                background-color: var(--background-light) !important;
+            }
+
+            & .pending {
+                color: #EF4444;
+            }
+
+            & .overdue {
+                color: #F59E0B;
+            }
+
+            & .paid {
+                color: #10B981;
+            }
+        }
+    }
+}
+
+.section-3 {
+    justify-content: space-between;
+    padding: 1.6rem;
+    gap: 2rem;
+
+    & :is(.left-side, .right-side) {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    & .left-side {
+        flex: 70%;
+
+        & .items {
+            display: flex;
+            flex-direction: column;
+
+            & .item {
+                display: flex;
+                justify-content: space-between;
+                padding: 0.8rem 0;
+
+                & p {
+                    &:first-child {
+                        font-weight: 600;
+                    }
+
+                    &:last-child {
+                        font-size: 0.9rem;
+                        color: rgba(51, 51, 51, 0.7);
+                    }
+                }
+                
+
+                &:not(:last-of-type) {
+                    border-bottom: 0.1rem solid rgba(51, 51, 51, 0.2);
+                }
+            }
+        }
+    }
+
+    & .right-side {
+        flex: 30%;
+
+        & .items {
+            display: flex;
+            flex-direction: column;
+    
+            & .item {
+                display: flex;
+                align-items: center;
+                padding: 0.4rem 0;
+                width: fit-content;
+                cursor: pointer;
+                gap: 1rem;
+    
+                & i {
+                    cursor: pointer;
+                    text-align: center;
+                    width: 1.6rem;
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+
+}

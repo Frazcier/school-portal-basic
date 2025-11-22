@@ -1,0 +1,149 @@
+@import url(global.css);
+
+:is(.section-1, .section-2) {
+    margin-bottom: 2rem;
+}
+
+.section-1 {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    & .item-box {
+        display: flex;
+        cursor: default;
+        gap: 0.6rem;
+        width: 12rem;
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+        white-space: nowrap;
+        border-radius: 1rem;
+        border: 0.1rem solid rgba(51, 51, 51, 0.1);
+        box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+
+        & p:first-of-type {
+            font-size: 0.9rem;
+            color: var(--color-grey-text);
+        }
+
+        & p:last-of-type {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+    }
+}
+
+.section-2 {
+    border-radius: 1rem;
+    box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.2);
+
+    & table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    & thead {
+        background-color: var(--primary-color);
+
+        & th {
+            text-align: left;
+            padding: 1rem;
+            color: var(--color-light-text);
+            border-bottom: 0.1rem solid rgba(51, 51, 51, 0.1);
+
+            &:first-of-type {
+                border-top-left-radius: 1rem;
+            }
+
+            &:last-of-type {
+                border-top-right-radius: 1rem;
+            }
+        }
+    }
+
+    & tbody {
+        & tr {
+            cursor: default;
+            transition: all 0.3s ease;
+
+            &:not(:last-of-type) {
+                border-bottom: 0.1rem solid rgba(51, 51, 51, 0.05);
+            }
+
+            &:last-of-type{
+                & td:first-of-type {
+                    border-bottom-left-radius: 1rem;
+                }
+
+                & td:last-of-type {
+                    border-bottom-right-radius: 1rem;
+                }
+            }
+
+
+            &:hover {
+                background-color: var(--background-grey);
+            }
+        }
+
+        & td {
+            padding: 1rem 1rem;
+        }
+
+        & :is(.grade, .remark) {
+            font-size: 0.9rem;
+            border-radius: 1rem;
+            padding: 0.2rem 1rem;
+
+            &:is(.good, .passed) {
+                color: #2ECC71;
+                background-color: rgba(46, 204, 113, 0.2);
+            }
+
+            &:is(.bad, .failed) {
+                color: #E74C3C;
+                background-color: rgba(231, 76, 60, 0.2);
+            }
+
+            &:is(.very-bad, .dropped) {
+                color: #F39C12;
+                background-color: rgba(243, 156, 18, 0.2);
+            }
+        }
+        
+    }
+}
+
+.section-3 {
+    display: grid;
+    column-gap: 1.8rem;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    & .item-box {
+        width: 100%;
+        display: flex;
+        cursor: default;
+        gap: 0.6rem;
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+        white-space: nowrap;
+        border-radius: 1rem;
+        border: 0.1rem solid rgba(51, 51, 51, 0.1);
+        box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+
+        & p:first-of-type {
+            font-size: 0.9rem;
+            color: var(--color-grey-text);
+        }
+
+        & p:last-of-type {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+    }
+}

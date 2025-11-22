@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/account-settings.css"/>
+    <link rel="icon" type="image/x-icon" href="../../assets/img/logo/logo.ico">
+    <title>Student Account Settings</title>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <div class="container">
+        
+        <div id="sidebar-placeholder"></div>
+
+        <div class="content">
+            <div class="section-header">
+                <h1>Account Settings</h1>
+                <h3>Manage your personal information and security preferences.</h3>
+            </div>
+
+            <div class="settings-card">
+                <div class="profile-row">
+                    <div class="profile-left">
+                        <img src="../../assets/img/profile-pictures/profile.svg" alt="Profile Picture">
+                        <div class="profile-text">
+                            <p>Profile Picture</p>
+                            <p>PNG, JPEG under 15MB</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline">Upload New Picture</button>
+                </div>
+            </div>
+
+            <div class="settings-card">
+                <h4 class="card-title">Personal Information</h4>
+                <p class="card-desc">Update your personal details here.</p>
+                
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label>First Name</label>
+                        <input class="input-field no-icon" type="text" value="Timothy">
+                    </div>
+                    <div class="input-group">
+                        <label>Middle Name</label>
+                        <input class="input-field no-icon" type="text" placeholder="Optional">
+                    </div>
+                    <div class="input-group">
+                        <label>Last Name</label>
+                        <input class="input-field no-icon" type="text" value="Dionela">
+                    </div>
+                </div>
+            </div>
+
+            <div class="settings-card">
+                <h4 class="card-title">Contact Email</h4>
+                <p class="card-desc">Manage the email address used for invoices and notifications.</p>
+                
+                <div class="email-row">
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <div class="input-wrapper">
+                            <img src="../../assets/img/icons/email-icon.svg" class="icon" alt="Email">
+                            <input class="input-field" type="email" value="dionela.ikinamada@gmail.com">
+                        </div>
+                    </div>
+                    <button class="btn btn-outline" style="margin-bottom: 1rem;">
+                        <img src="../../assets/img/icons/add-icon.svg" alt="Add"> Add Email
+                    </button>
+                </div>
+            </div>
+
+            <div class="settings-card">
+                <h4 class="card-title">Security</h4>
+                <p class="card-desc">Update your password and secure your account.</p>
+                
+                <div class="form-grid" style="grid-template-columns: 1fr 1fr;">
+                    <div class="input-group">
+                        <label>Current Password</label>
+                        <div class="input-wrapper">
+                            <img src="../../assets/img/icons/password-icon.svg" class="icon" alt="Lock">
+                            <input class="input-field" type="password" placeholder="••••••••">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>New Password</label>
+                        <div class="input-wrapper">
+                            <img src="../../assets/img/icons/password-icon.svg" class="icon" alt="Lock">
+                            <input class="input-field" type="password" placeholder="Enter new password">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="security-actions">
+                    <button class="btn btn-primary">Save Changes</button>
+                    <a href="../auth/login.html" class="btn btn-outline">Logout</a>
+                    <button class="btn btn-danger">Request Account Deletion</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../../assets/js/component-student.js"></script>
+</body>
+</html>
