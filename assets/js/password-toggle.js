@@ -1,30 +1,35 @@
-const regToggleBtn = document.getElementById('regToggleBtn');
-const regEyePath = document.getElementById('regEyePath');
-const regPasswordInput = document.getElementById('regPasswordInput');
+// assets/js/password-toggle.js
 
-const eyeOpen = "M15 12a3 3 0 11-6 0 3 3 0 016 0z M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z";
-const eyeClosed = "M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21";
+document.addEventListener('DOMContentLoaded', () => {
+    // Define the paths to your icons
+    // Note: These paths are relative to the PAGE where the script is run (e.g., pages/auth/login.php)
+    const eyeOpenPath = "../../assets/img/icons/eye-icon.svg";
+    const eyeClosedPath = "../../assets/img/icons/eye-off-icon.svg";
 
-regToggleBtn.addEventListener('click', function () {
-    const type = regPasswordInput.getAttribute('type') === 'password' ? 'text' : 'password';
-            
-    if (type === 'text') {
-        regPasswordInput.setAttribute('type', 'text');
-        regEyePath.setAttribute('d', eyeClosed);
-    } else {
-        regPasswordInput.setAttribute('type', 'password');
-        regEyePath.setAttribute('d', eyeOpen);
-    }
+    const toggleButtons = document.querySelectorAll('.toggle-password');
+
+    toggleButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const container = this.parentElement;
+            const input = container.querySelector('input');
+
+            if (input) {
+                // 1. Toggle Password Visibility
+                const isPassword = input.getAttribute('type') === 'password';
+                input.setAttribute('type', isPassword ? 'text' : 'password');
+
+                // 2. Toggle Icon Image Source
+                // If it was password (hidden), we are now showing text -> use Open Eye
+                // If it was text (shown), we are now hiding it -> use Closed Eye
+                // Note: Logic depends on which icon you want for "Show". 
+                // Standard: Closed Eye = Hidden, Open Eye = Visible.
+                
+                if (isPassword) {
+                    this.setAttribute('src', eyeOpenPath);
+                } else {
+                    this.setAttribute('src', eyeClosedPath);
+                }
+            }
+        });
+    });
 });
-
-const alertBox = document.getElementById('alertBox');
-if (alertBox) {
-    setTimeout(() => {
-        alertBox.style.transition = 'opacity 0.5s ease';
-        alertBox.style.opacity = '0';
-        setTimeout(() => {
-            alertBox.remove();
-        }, 500);
-    }, 5000);
-}
-

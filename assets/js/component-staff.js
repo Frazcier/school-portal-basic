@@ -48,7 +48,7 @@ loadSplash();
 document.addEventListener("DOMContentLoaded", function() {
     // Your existing component logic...
     loadComponent('header-placeholder', '../../components/header.html');
-    loadComponent('sidebar-placeholder', '../../components/sidebar-student.html');
+    loadComponent('sidebar-placeholder', '../../components/sidebar-staff.html');
     loadComponent('footer-placeholder', '../../components/footer.html');
 });
 
