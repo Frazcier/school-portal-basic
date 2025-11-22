@@ -269,7 +269,9 @@ button {
 
 /***** MAIN CONTENT SECTION *****/
 .content {
-    flex-basis: 100%;
+    flex: 1;
+    width: 100%;
+    min-width: 0;
     padding: 2rem;
 }
 
